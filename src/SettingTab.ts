@@ -33,7 +33,7 @@ export class SettingTab extends PluginSettingTab {
 
     containerEl.empty();
 
-    containerEl.createEl('h1', { text: 'Periodic Notes Settings.' });
+    containerEl.createEl('h1', { text: 'Periodic Notes Settings' });
 
     new Setting(containerEl)
       .setName('Enable')
@@ -50,7 +50,7 @@ export class SettingTab extends PluginSettingTab {
 
     if (this.plugin.settings.usePeriodicNotes) {
       new Setting(containerEl)
-        .setName('Periodic Notes Folder:')
+        .setName('Periodic Notes Folder')
         .addText((text) =>
           text
             .setPlaceholder(DEFAULT_SETTINGS.periodicNotesPath)
@@ -64,7 +64,7 @@ export class SettingTab extends PluginSettingTab {
         );
 
       new Setting(containerEl)
-        .setName('Habit Header:')
+        .setName('Habit Header')
         .setDesc('Where the Habit module is in a daily note')
         .addText((text) =>
           text
@@ -79,7 +79,7 @@ export class SettingTab extends PluginSettingTab {
         );
 
       new Setting(containerEl)
-        .setName('Project List Header:')
+        .setName('Project List Header')
         .setDesc('Where the Project List is in a daily note')
         .addText((text) =>
           text
@@ -94,7 +94,7 @@ export class SettingTab extends PluginSettingTab {
         );
 
       new Setting(containerEl)
-        .setName('Area List Header:')
+        .setName('Area List Header')
         .setDesc('Where the Area List is in a quarterly note')
         .addText((text) =>
           text
@@ -123,7 +123,7 @@ export class SettingTab extends PluginSettingTab {
 
       if (this.plugin.settings.useDailyRecord) {
         new Setting(containerEl)
-          .setName('Header:')
+          .setName('Header')
           .setDesc('Where the Daily Record module is in a daily note')
           .addText((text) =>
             text
@@ -138,7 +138,7 @@ export class SettingTab extends PluginSettingTab {
           );
 
         new Setting(containerEl)
-          .setName('API:')
+          .setName('API')
           .setDesc('The daily record API')
           .addText((text) =>
             text
@@ -156,7 +156,7 @@ export class SettingTab extends PluginSettingTab {
           );
 
         new Setting(containerEl)
-          .setName('Token:')
+          .setName('Token')
           .setDesc('The token of your API')
           .addText((text) =>
             text
@@ -175,7 +175,7 @@ export class SettingTab extends PluginSettingTab {
       }
     }
 
-    containerEl.createEl('h1', { text: 'P.A.R.A Notes Settings.' });
+    containerEl.createEl('h1', { text: 'P.A.R.A. Notes Settings' });
 
     new Setting(containerEl)
       .setName('Enable')
@@ -191,7 +191,7 @@ export class SettingTab extends PluginSettingTab {
       );
 
     if (this.plugin.settings.usePARANotes) {
-      new Setting(containerEl).setName('Projects Folder:').addText((text) =>
+      new Setting(containerEl).setName('Projects Folder').addText((text) =>
         text
           .setPlaceholder(DEFAULT_SETTINGS.projectsPath)
           .setValue(this.plugin.settings.projectsPath)
@@ -203,7 +203,7 @@ export class SettingTab extends PluginSettingTab {
           )
       );
 
-      new Setting(containerEl).setName('Areas Folder:').addText((text) =>
+      new Setting(containerEl).setName('Areas Folder').addText((text) =>
         text
           .setPlaceholder(DEFAULT_SETTINGS.areasPath)
           .setValue(this.plugin.settings.areasPath)
@@ -214,7 +214,7 @@ export class SettingTab extends PluginSettingTab {
             }, 500)
           )
       );
-      new Setting(containerEl).setName('Resources Folder:').addText((text) =>
+      new Setting(containerEl).setName('Resources Folder').addText((text) =>
         text
           .setPlaceholder(DEFAULT_SETTINGS.resourcesPath)
           .setValue(this.plugin.settings.resourcesPath)
@@ -226,7 +226,7 @@ export class SettingTab extends PluginSettingTab {
           )
       );
 
-      new Setting(containerEl).setName('Archives Folder:').addText((text) =>
+      new Setting(containerEl).setName('Archives Folder').addText((text) =>
         text
           .setPlaceholder(DEFAULT_SETTINGS.archivesPath)
           .setValue(this.plugin.settings.archivesPath)
